@@ -132,9 +132,11 @@ setTimeout(function() {
                         for (let i = 0; i < 10; i++) {
                             btnDivideBy2.click();
                         }
-                        if (Number(document.querySelectorAll('.field_group .has-input')[0].value) == wagers[counter].bet) {
-                            btnKABet.click();
-                        }
+                        setTimeout(()=>{
+                            if (Number(document.querySelectorAll('.field_group .has-input')[0].value) == wagers[counter].bet) {
+                                btnKABet.click();
+                            }
+                        },1000);
                         console.log("bet number " + wagers[counter].id + " bet: " + wagers[counter].bet + " // total: " + wagers[counter].total);
                         counter++;
                     }, 5500);
