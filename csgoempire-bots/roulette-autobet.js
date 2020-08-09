@@ -165,8 +165,8 @@ setTimeout(function () {
                             setTimeout(()=>{;
                                 btnBetOnCt.click();
                                 console.log("Bet number " + wagers[counterCT].id + " on CT // bet: " + wagers[counterCT].bet + " // total: " + wagers[counterCT].total);
-                            },1000)
-                            counterCT++;
+                                counterCT++;
+                            },1000);
                         }, 5000);
                     }else{
                         roundsWithoutCT = 0;
@@ -187,8 +187,8 @@ setTimeout(function () {
                             setTimeout(()=>{
                                 btnBetOnTr.click();
                                 console.log("Bet number " + wagers[counterTR].id + " on TR // bet: " + wagers[counterTR].bet + " // total: " + wagers[counterTR].total);
+                                counterTR++;
                             },1000);
-                            counterTR++;
                         }, 5000);
                     }else{
                         roundsWithoutTR = 0;

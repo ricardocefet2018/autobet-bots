@@ -108,7 +108,7 @@ setTimeout(function() {
         }
     }
 
-    console.log(wagers[0]);
+    console.log(wagers);
 
     setInterval(function() {
         if (lastFiveCards[0] != getLastFiveCards()[0] || lastFiveCards[1] != getLastFiveCards()[1] || lastFiveCards[2] != getLastFiveCards()[2] || lastFiveCards[3] != getLastFiveCards()[3] || lastFiveCards[4] != getLastFiveCards()[4]) {
@@ -135,10 +135,10 @@ setTimeout(function() {
                         setTimeout(()=>{
                             if (Number(document.querySelectorAll('.field_group .has-input')[0].value) == wagers[counter].bet) {
                                 btnKABet.click();
+                                console.log("bet number " + wagers[counter].id + " bet: " + wagers[counter].bet + " // total: " + wagers[counter].total);
+                                counter++;
                             }
                         },1000);
-                        console.log("bet number " + wagers[counter].id + " bet: " + wagers[counter].bet + " // total: " + wagers[counter].total);
-                        counter++;
                     }, 5500);
                 }else{
                     console.log("rounds without KA: "+roundsWithoutKA);
