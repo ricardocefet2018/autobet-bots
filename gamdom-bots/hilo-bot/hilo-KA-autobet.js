@@ -97,11 +97,11 @@ setTimeout(function() {
             const profit = ifWon-total;
     
             const wager = {
-                id: id,
-                bet: bet,
-                total: total,
-                ifWon: ifWon,
-                profit: profit
+                id,
+                bet,
+                total,
+                ifWon,
+                profit
             };
 
           wagers.push(wager);
